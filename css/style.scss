@@ -13,6 +13,18 @@ $darkGoldColor: #968D48;
 $lightBlueColor: #4BB7E3;
 $darkBlueColor: #2A7796;
 $pinkColor: #E35687;
+
+@font-face {
+    font-family: BookmanOld;
+    src: url(../fonts/BookmanOldStyle-Regular.ttf);
+}
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeue-Bold.ttf);
+}
+$BookmanOld: BookmanOld;
+$HelveticaNeue: HelveticaNeue;
+
 /////////////////////////////////////////////////// Testing CSS HERE
 // .test {
 //     h1 {
