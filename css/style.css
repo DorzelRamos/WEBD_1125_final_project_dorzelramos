@@ -19,6 +19,7 @@ a {
   src: url(../fonts/HelveticaNeue-Bold.ttf);
 }
 .main-content {
+  position: relative;
   width: 100%;
   height: 100vh;
   background-image: url(../images/hector-pirate-ship.jpg);
@@ -26,7 +27,7 @@ a {
   background-size: 100% 100%;
 }
 .main-content .nav {
-  position: relative;
+  position: absolute;
   z-index: 1;
   width: 100vw;
   background-color: #E6E0B6;
@@ -74,6 +75,7 @@ a {
 }
 .main-content .nav__listitemdrop li:hover, .main-content .nav__listitemdrop li:focus {
   background-color: #4BB7E3;
+  color: #F6FCFF;
 }
 .main-content .nav__list {
   position: relative;
@@ -81,8 +83,13 @@ a {
   font-size: 21px;
   top: 10px;
 }
+.main-content .nav__list .nav_listlogo {
+  position: fixed;
+}
 .main-content .nav__list .nav__listitem {
   text-transform: uppercase;
+  margin-left: 1rem;
+  position: relative;
 }
 .main-content .nav__list #cat {
   border-radius: 0px 0px 14px 14px;
@@ -99,9 +106,37 @@ a {
   width: 220px;
   height: 39px;
 }
+.main-content .jumbord {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  height: 450px;
+  background-color: #F6FCFF;
+  border: #F6FCFF solid 1rem;
+  top: 259px;
+  left: 400px;
+}
+.main-content .jumbotron {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  height: 450px;
+  background-color: #F7FCFF;
+  top: 259px;
+  left: 400px;
+  margin: auto;
+  opacity: 100%;
+  mix-blend-mode: exclusion;
+  border-radius: 14px;
+}
 .main-content footer {
   height: 75px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #4BB7E3;

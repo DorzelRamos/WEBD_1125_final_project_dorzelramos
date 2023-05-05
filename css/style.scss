@@ -19,7 +19,7 @@ $blackColor: #000000;
 $whiteColor: #F6FCFF;
 
 $radius: 0px 0px 14px 14px;
-$radius1: 1rem;
+$radius14: 14px;
 
 @font-face {
     font-family: BookmanOldStyle;
@@ -58,6 +58,7 @@ $HelveticaNeue: HelveticaNeue;
 
 // ////////////////////////////////////////////////MAIN CONTENT STARTS HERE
 .main-content {
+    position: relative;
     width: 100%;
     height: 100vh;
     background-image: url(../images/hector-pirate-ship.jpg);
@@ -66,7 +67,7 @@ $HelveticaNeue: HelveticaNeue;
     // ///////////////////////////////////////////////NAVIGATION STARTS HERE
     // ///////////////////////////////////////////////NAV COPIED AND PASTED FROM WEEK 9AND10 DEMO
      .nav {
-    position: relative;
+    position: absolute;
     z-index: 1;
     width: 100vw;
     background-color: $beigeColor;
@@ -146,6 +147,8 @@ $HelveticaNeue: HelveticaNeue;
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity 200ms ease-in-out;
+                
+                
 
                 li {
                     list-style: none;
@@ -156,6 +159,7 @@ $HelveticaNeue: HelveticaNeue;
                     &:hover,
                     &:focus {
                         background-color: $lightBlueColor;
+                        color: $whiteColor;
                     }
                 }
 
@@ -176,8 +180,13 @@ $HelveticaNeue: HelveticaNeue;
     font-family: $BookmanOldStyle;
     font-size: 21px;
     top: 10px;
+    .nav_listlogo {
+        position: fixed;
+    }
     .nav__listitem {
         text-transform: uppercase;
+        margin-left: 1rem;
+        position: relative;
     }
     #cat {
         border-radius: $radius;
@@ -186,8 +195,8 @@ $HelveticaNeue: HelveticaNeue;
         width: 8rem;
         height: 4.9rem;
         text-align: center;
-        font-size: 18px;
-        
+        font-size: 18px;      
+        // font-family: $HelveticaNeue;  
     }
     svg {
     top: 28px;
@@ -197,10 +206,47 @@ $HelveticaNeue: HelveticaNeue;
     }
 }
 // ////////////////////////////////////////////////STYLING NAV ENDS HERE
+
+// ////////////////////////////////////////////////JUMBOTRON STARTS HERE!
+.jumbord{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1150px;
+    height: 450px;
+    background-color: $whiteColor;
+    border: $whiteColor solid 1rem;
+    top: 259px;
+    left: 400px;
+
+}
+.jumbotron {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1150px;
+    height: 450px;
+    background-color: #F7FCFF;
+    // border: solid red 5rem;
+    // border-style: normal dotted;
+    top: 259px;
+    left: 400px;
+    margin: auto;
+    opacity: 100%;
+    mix-blend-mode: exclusion;
+    border-radius: $radius14;
+    
+}
+// ////////////////////////////////////////////////JUMBOTRON ENDS HERE!
+
+
 // ////////////////////////////////////////////////FOOTER STARTS HERE
 footer {
     height: 75px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: $lightBlueColor;
