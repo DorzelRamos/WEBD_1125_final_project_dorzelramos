@@ -135,6 +135,19 @@ a {
   mix-blend-mode: exclusion;
   border-radius: 14px;
 }
+.main-content h1 {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F6FCFF;
+  font-size: 85px;
+  left: 512px;
+  top: 431px;
+  border: 1px solid none;
+  outline-color: #000000;
+}
 .main-content footer {
   height: 75px;
   position: absolute;

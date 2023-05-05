@@ -248,6 +248,19 @@ $HelveticaNeue: HelveticaNeue;
     mix-blend-mode: exclusion;
     border-radius: $radius14;
 }
+h1 {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
+    font-size: 85px;
+    left: 512px;
+    top: 431px;
+    border: 1px solid none;
+    outline-color: $blackColor;
+}
 // ////////////////////////////////////////////////JUMBOTRON ENDS HERE!
 
 
