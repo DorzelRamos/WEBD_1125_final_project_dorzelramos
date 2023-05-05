@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
   font-family: BookmanOldStyle;
   src: url(../fonts/BookmanOldStyle-Regular.ttf);
@@ -19,5 +24,76 @@
   background-image: url(../images/hector-pirate-ship.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.main-content .nav {
   position: relative;
+  z-index: 1;
+  width: 100vw;
+  background-color: #E6E0B6;
+  height: 75px;
+}
+.main-content .nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+.main-content .nav__listlogo {
+  list-style: none;
+  margin-right: auto;
+  cursor: pointer;
+}
+.main-content .nav__listitem {
+  list-style: none;
+  position: relative;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+}
+.main-content .nav__listitem:hover ul, .main-content .nav__listitem:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+.main-content .nav__listitemdrop {
+  position: absolute;
+  top: 4rem;
+  left: 0.5px;
+  background-color: #F6FCFF;
+  border-radius: 0px 0px 14px 14px;
+  width: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: opacity 200ms ease-in-out;
+}
+.main-content .nav__listitemdrop li {
+  list-style: none;
+  transition: background-color 200ms ease-in-out;
+}
+.main-content .nav__listitemdrop li:hover, .main-content .nav__listitemdrop li:focus {
+  background-color: #4BB7E3;
+}
+.main-content .nav__list {
+  position: relative;
+  font-family: BookmanOldStyle;
+  font-size: 21px;
+  top: 10px;
+}
+.main-content .nav__list .nav__listitem {
+  text-transform: uppercase;
+}
+.main-content .nav__list #cat {
+  border-radius: 0px 0px 14px 14px;
+}
+.main-content .nav__list .nav__listitemdrop {
+  width: 8rem;
+  height: 4.9rem;
+  text-align: center;
+  font-size: 18px;
+}
+.main-content .nav__list svg {
+  top: 28px;
+  margin-left: 40px;
+  width: 220px;
+  height: 39px;
 }/*# sourceMappingURL=style.css.map */
