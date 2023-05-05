@@ -213,16 +213,25 @@ $HelveticaNeue: HelveticaNeue;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1150px;
-    height: 450px;
-    background-color: $whiteColor;
-    border: $whiteColor solid 1rem;
-    top: 259px;
-    left: 400px;
-
+    width: 1170px;
+    height: 500px;
+    // width: 1150px;
+    // height: 450px;
+    // background-color: $whiteColor;
+    // border: $whiteColor solid 1rem;
+    top: 231px;
+    left: 389px;
+    svg#bord {
+        z-index: 1;
+        // width: 3000px;
+        // height: 600px;
+        // width: 1150px;
+        // height: 450px;
+    }
 }
+
 .jumbotron {
-    z-index: 1;
+    z-index: 0;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -238,7 +247,6 @@ $HelveticaNeue: HelveticaNeue;
     opacity: 100%;
     mix-blend-mode: exclusion;
     border-radius: $radius14;
-    
 }
 // ////////////////////////////////////////////////JUMBOTRON ENDS HERE!
 

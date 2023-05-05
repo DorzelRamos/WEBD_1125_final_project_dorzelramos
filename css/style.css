@@ -111,15 +111,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1150px;
-  height: 450px;
-  background-color: #F6FCFF;
-  border: #F6FCFF solid 1rem;
-  top: 259px;
-  left: 400px;
+  width: 1170px;
+  height: 500px;
+  top: 231px;
+  left: 389px;
+}
+.main-content .jumbord svg#bord {
+  z-index: 1;
 }
 .main-content .jumbotron {
-  z-index: 1;
+  z-index: 0;
   position: fixed;
   display: flex;
   justify-content: center;
