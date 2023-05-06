@@ -259,13 +259,65 @@ h1 {
     left: 512px;
     top: 431px;
     border: 1px solid none;
-    outline-color: $blackColor;
 }
 // ////////////////////////////////////////////////JUMBOTRON ENDS HERE!
 
 // ////////////////////////////////////////////////MENU CONTENT STARTS HERE!
 .menu {
-
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1167px;
+    height: 500px;
+    top: 231px;
+    left: 389px;
+    svg#menu-bord {
+        z-index: 1;
+    }
+}
+.menu-jumbo {
+    z-index: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1150px;
+    height: 130px;
+    background-color: #F7FCFF;
+    top: 259px;
+    left: 398px;
+    margin: auto;
+    opacity: 100%;
+    mix-blend-mode: exclusion;
+    border-radius: 0px;
+}
+h1.menu-title {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
+    font-size: 85px;
+    left: 271px;
+    top: 39px;
+}
+section.menu-prices {
+    z-index: 0;
+    position: fixed;
+    display: inline-block;
+    width: 1150px;
+    height: 315px;
+    background-color: $beigeColor;
+    top: 389px;
+    left: 398px;
+    border-radius: 0px;
+    text-align: center;
+    line-height: 2.2;
+    margin-right: auto;
+    font-size:xx-large;
+    padding: 1px;
 }
 // ////////////////////////////////////////////////MENU CONTENT ENDS HERE!
 
