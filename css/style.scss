@@ -303,6 +303,39 @@ h1.menu-title {
     left: 271px;
     top: 39px;
 }
+h1.dine-in {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
+    font-size: 70px;
+    left: 230px;
+    top: 59px;
+}
+h1.take-out {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
+    font-size: 70px;
+    left: 230px;
+    top: 59px;
+}
+h1.catering {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
+    font-size: 70px;
+    left: 230px;
+    top: 59px;
+}
 section.menu-prices {
     z-index: 0;
     position: fixed;
