@@ -354,6 +354,99 @@ section.menu-prices {
 }
 // ////////////////////////////////////////////////MENU CONTENT ENDS HERE!
 
+// ////////////////////////////////////////////////CONTACT CONTENT STARTS HERE
+
+form {
+    margin-left: 18%;
+    position: relative;
+    width: 75%;
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    top: 14%;
+    background-color: $lightBlueColor;
+    border-radius: $radius14;
+    h1#contact-title {
+        color: $blackColor;
+        font-size: 2rem;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 18px;
+        left: 388px;
+
+    }
+
+
+    label {
+        //color of the display names
+        position: relative;
+        color: $blackColor;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        padding: 1rem;
+        top: 33px;
+        left: 20px;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        //color of the labels boxes
+        position: relative;
+        font-size: 1.25rem;
+        padding: 0.5rem 0;
+        border-radius: $radius14;
+        border: none; //this overrides what the browser is trying to do vs what the code is doing
+        background-color: $beigeColor;
+        transition: background-color 200ms linear;
+        top: 23px;
+        left: 34px;
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus,
+    textarea:focus {
+        //styling here, put :focus on all
+        //message textarea
+        border: none;
+        outline: 0;
+        background-color: $whiteColor;
+        color: $blackColor;
+    }
+
+    textarea {
+        //text area for the message
+        height: 200px;
+        margin-bottom: 1rem;
+        color: $whiteColor;
+        // background-color: $blueColor;
+    }
+
+    button#button {
+        //the submit button
+        background-color: $whiteColor;
+        color: $blackColor;
+        font-size: 1.5rem;
+        width: 50%;
+        padding: 1rem;
+        border-radius: $radius;
+        border: none;
+        display: inline-block;
+        margin: 1rem auto 0 auto;
+        transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        cursor: pointer;
+    }
+
+    button#button:hover {
+        background-color: $beigeColor;
+        color: $whiteColor;
+    }
+}
+// ////////////////////////////////////////////////CONTACT CONTENT ENDS HERE
+
 // ////////////////////////////////////////////////FOOTER STARTS HERE
 footer {
     height: 75px;

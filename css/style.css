@@ -236,6 +236,80 @@ a {
   font-size: xx-large;
   padding: 1px;
 }
+.main-content form {
+  margin-left: 18%;
+  position: relative;
+  width: 75%;
+  height: 72%;
+  display: flex;
+  flex-direction: column;
+  top: 14%;
+  background-color: #4BB7E3;
+  border-radius: 14px;
+}
+.main-content form h1#contact-title {
+  color: #000000;
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 18px;
+  left: 388px;
+}
+.main-content form label {
+  position: relative;
+  color: #000000;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  top: 33px;
+  left: 20px;
+}
+.main-content form input[type=text],
+.main-content form input[type=email],
+.main-content form textarea {
+  position: relative;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+  border-radius: 14px;
+  border: none;
+  background-color: #E6E0B6;
+  transition: background-color 200ms linear;
+  top: 23px;
+  left: 34px;
+}
+.main-content form input[type=text]:focus,
+.main-content form input[type=email]:focus,
+.main-content form textarea:focus {
+  border: none;
+  outline: 0;
+  background-color: #F6FCFF;
+  color: #000000;
+}
+.main-content form textarea {
+  height: 200px;
+  margin-bottom: 1rem;
+  color: #F6FCFF;
+}
+.main-content form button#button {
+  background-color: #F6FCFF;
+  color: #000000;
+  font-size: 1.5rem;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 0px 0px 14px 14px;
+  border: none;
+  display: inline-block;
+  margin: 1rem auto 0 auto;
+  transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+.main-content form button#button:hover {
+  background-color: #E6E0B6;
+  color: #F6FCFF;
+}
 .main-content footer {
   height: 75px;
   position: absolute;
