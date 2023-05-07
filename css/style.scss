@@ -192,10 +192,12 @@ $HelveticaNeue: HelveticaNeue;
         border-radius: $radius;
     }
     .nav__listitemdrop {
+        z-index: -1;
         width: 8rem;
-        height: 4.9rem;
+        height: 5.9rem;
         text-align: center;
         font-size: 18px;      
+        font-family: 'Titillium Web', sans-serif;
         // font-family: $HelveticaNeue;  
     }
     svg {
@@ -357,26 +359,27 @@ section.menu-prices {
 // ////////////////////////////////////////////////CONTACT CONTENT STARTS HERE
 
 form {
-    margin-left: 18%;
+    margin-left: 15%;
     position: relative;
     width: 75%;
-    height: 72%;
+    height: 74%;
     display: flex;
     flex-direction: column;
     top: 14%;
     background-color: $lightBlueColor;
     border-radius: $radius14;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100;
     h1#contact-title {
         color: $blackColor;
         font-size: 2rem;
-        z-index: 1;
+        z-index: 0;
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         top: 18px;
-        left: 388px;
-
+        left: 396px;
     }
 
 
@@ -402,8 +405,9 @@ form {
         border: none; //this overrides what the browser is trying to do vs what the code is doing
         background-color: $beigeColor;
         transition: background-color 200ms linear;
-        top: 23px;
+        top: 3px;
         left: 34px;
+        width: 1380px;
     }
 
     input[type=text]:focus,
@@ -421,28 +425,30 @@ form {
         //text area for the message
         height: 200px;
         margin-bottom: 1rem;
-        color: $whiteColor;
+        color: $blackColor;
         // background-color: $blueColor;
     }
 
     button#button {
         //the submit button
-        background-color: $whiteColor;
-        color: $blackColor;
+        position: relative;
+        background-color: $beigeColor;
+        color: $lightBlueColor;
         font-size: 1.5rem;
         width: 50%;
         padding: 1rem;
-        border-radius: $radius;
+        border-radius: $radius14;
         border: none;
         display: inline-block;
         margin: 1rem auto 0 auto;
         transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
         cursor: pointer;
+        top: -15px;
     }
 
     button#button:hover {
-        background-color: $beigeColor;
-        color: $whiteColor;
+        background-color: $whiteColor;
+        color: $beigeColor;
     }
 }
 // ////////////////////////////////////////////////CONTACT CONTENT ENDS HERE
