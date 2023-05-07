@@ -260,7 +260,7 @@ a {
   justify-content: center;
   align-items: center;
   top: 18px;
-  left: 396px;
+  left: 410px;
 }
 .main-content form label {
   position: relative;
@@ -268,7 +268,7 @@ a {
   font-size: 1.5rem;
   margin: 1rem 0;
   padding: 1rem;
-  top: 33px;
+  top: 23px;
   left: 20px;
 }
 .main-content form input[type=text],
@@ -284,6 +284,7 @@ a {
   top: 3px;
   left: 34px;
   width: 1380px;
+  margin: -0.5rem;
 }
 .main-content form input[type=text]:focus,
 .main-content form input[type=email]:focus,

@@ -379,7 +379,7 @@ form {
         justify-content: center;
         align-items: center;
         top: 18px;
-        left: 396px;
+        left: 410px;
     }
 
 
@@ -390,8 +390,9 @@ form {
         font-size: 1.5rem;
         margin: 1rem 0;
         padding: 1rem;
-        top: 33px;
+        top: 23px;
         left: 20px;
+
     }
 
     input[type=text],
@@ -408,6 +409,7 @@ form {
         top: 3px;
         left: 34px;
         width: 1380px;
+        margin: -0.5rem;
     }
 
     input[type=text]:focus,
