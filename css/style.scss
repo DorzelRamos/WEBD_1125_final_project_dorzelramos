@@ -362,7 +362,7 @@ form {
     margin-left: 15%;
     position: relative;
     width: 75%;
-    height: 74%;
+    height: 76%;
     display: flex;
     flex-direction: column;
     top: 14%;
@@ -434,8 +434,8 @@ form {
         position: relative;
         background-color: $beigeColor;
         color: $lightBlueColor;
-        font-size: 1.5rem;
-        width: 50%;
+        font-size: 30px;
+        width: 20%;
         padding: 1rem;
         border-radius: $radius14;
         border: none;
@@ -444,14 +444,111 @@ form {
         transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
         cursor: pointer;
         top: -15px;
+        font-family: 'Titillium Web', sans-serif;
     }
 
     button#button:hover {
         background-color: $whiteColor;
-        color: $beigeColor;
+        color: $blackColor;
     }
 }
 // ////////////////////////////////////////////////CONTACT CONTENT ENDS HERE
+
+// ////////////////////////////////////////////////RECIPES STARTS HERE
+section#recipe-section {
+    //the box surrounding the whole recipes
+    position: relative;
+    top: 3rem;
+    width: 80%;
+    height: 80%;
+    background-color: $lightBlueColor;
+    padding: 3rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    min-height: 729px;
+    top: 94px;
+    left: 193px;
+    h1#recipe-title {
+        color: $blackColor;
+        font-size: 2.5rem;
+        left: 72px;
+        top: 14px;
+        font-family: $BookmanOldStyle;
+    }
+    div#recipe-div {
+        height: 70%;
+        width: 100%;
+        position: relative;
+        section#recipe-items {
+            //wrapped around figure
+            display: flex;
+            justify-content: space-evenly;
+            padding: 1em;
+            top: 10px;
+
+            figure {
+                //the parent
+                background-color: $whiteColor;
+                width: 30%;
+                border-radius: $radius14;
+                // cursor: pointer;
+                // float: right;
+
+                img {
+                    //child inherits parent stuff
+                    width: 100%;
+                    height: 445px;
+                    border-radius: $radius14 $radius14 0 0;
+                    // transition: filter 250ms cubic-bezier(0.19, 1, 0.22, 1);
+                }
+
+                figcaption {
+                    position: relative;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                    width: auto;
+                    height: 14rem;
+                    p{
+                        position: relative;
+                        text-align: left;
+                        padding: $radius14;
+                        font-size: 20px;
+                        top: -1rem;
+                    }
+                    h3 {
+                        position: relative;
+                        background-color: $beigeColor;
+                        font-family: $BookmanOldStyle;
+                        padding: 1rem;
+                        top: -2rem;
+                        font-size: 30px;
+                    }
+                    h4 {
+                        position: relative;
+                        font-size: 25px;
+                        margin-left: -190px;
+                        padding: 0em;
+                        top: -1rem;
+                        left: -1rem;
+
+
+                    }
+                }
+            }
+
+            // figure:hover img {
+            //     filter: sepia(100%);
+            // }
+
+            // figure:hover {
+            //     box-shadow: $radius $radius $radius rgba(0, 0, 0, 0.4);
+            // }
+        }
+    }
+    }
+// ////////////////////////////////////////////////RECIPES ENDS HERE
+
 
 // ////////////////////////////////////////////////FOOTER STARTS HERE
 footer {
